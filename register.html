@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>MapleStory - 2D Adventure Game</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="maplestory.css" />
+    <link rel="stylesheet" href="darkmode.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="imgs/maple-icon.png"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li id="active"><a href="register.html">Cadastro</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="container main">
+        <h1 class="title registro">Registre-se!</h1>
+        <form>
+          <div class="formulario-padrao">
+            <label for="login">Login</label>
+            <input type="text" id="login" required />
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" required />
+
+            <label for="senha">Confirmar Senha</label>
+            <input type="password" id="senha" required />
+
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="seuemail@dominio.com"
+            />
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" required value="(XX)XXXXX-XXXX" />
+          </div>
+
+          <div class="dropdown">
+            <p>Qual o seu sexo?</p>
+            <select>
+              <option selected>Não informar</option>
+              <option>Masculino</option>
+              <option>Feminino</option>
+            </select>
+          </div>
+
+          <div class="xxx">
+            <label class="checkbox" for="checkbox"
+              ><input
+                type="checkbox"
+                name="checkbox"
+                value="check"
+                class="checkbox"
+              />Gostaria de receber e-mails com as últimas novidades?</label
+            >
+          </div>
+
+          <!--BOTAO DE ENVIAR!!!-->
+          <input class="botao" type="submit" value="Finalizar Cadastro!" />
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Contato:<a id="contato" href="https://www.google.com" target="_blank">
+          maplestory@email.com</a
+        >
+      </p>
+      <p>Todos os direitos reservados - Nexon Corporation</p>
+      <p>2022</p>
+    </footer>
+
+    <!------------BOTAO DARK MODE------------->
+    <button
+      class="dark-mode-button top-dark-mode-button"
+      aria-label="dark mode toggle"
+    >
+      <span aria-hidden="true" class="dark-toggle">
+        <span class="DTspan"></span>
+      </span>
+    </button>
+
+    <!-------SCRIPT DO BOTAO DARK MODE----------->
+    <script src="script.js"></script>
+    <!------------------------------------------>
+  </body>
+</html>
